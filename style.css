@@ -1,0 +1,295 @@
+:root {
+    --verde-logo: #33512B;
+    --verde-claro: #BBF745;
+    --branco-logo: #fff;
+    --cinza-claro: #f2f2f2;
+    --cinza: #e9e9e9;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: var(--cinza-claro);
+    color: var(--verde-logo);
+}
+
+.header {
+    background: var(--verde-logo);
+    color: var(--branco-logo);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1.5em;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 56px;
+}
+
+.header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    color: var(--branco-logo);
+    text-decoration: none;
+    margin-left: 1.2em;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.header nav a:hover {
+    color: var(--verde-claro);
+}
+
+/* Ícone Espaço do Aluno */
+.aluno-icone {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    margin-left: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--verde-claro);
+    gap: 0.5em;
+    transition: color 0.2s;
+}
+.aluno-icone:hover span {
+    color: var(--verde-logo);
+}
+.aluno-icone svg {
+    vertical-align: middle;
+}
+.aluno-icone span {
+    font-size: 1em;
+    margin-left: 0.2em;
+}
+
+.hero {
+    background: var(--verde-logo);
+    color: var(--branco-logo);
+    text-align: center;
+    padding: 3em 1em 2em 1em;
+}
+
+.slogan {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: var(--verde-claro);
+    margin-top: 0.5em;
+}
+
+.btn-whats {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.8em 2em;
+    background: var(--verde-claro);
+    color: var(--verde-logo);
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 2px 12px #33512b22;
+    transition: background 0.2s;
+}
+
+.btn-whats:hover {
+    background: #9DD63C;
+}
+
+main section {
+    margin: 2em auto;
+    max-width: 900px;
+    background: var(--branco-logo);
+    box-shadow: 0 1px 8px #33512b22;
+    border-radius: 16px;
+    padding: 2em;
+}
+
+/* Instagram */
+.instagram .insta-gallery {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+.instagram .insta-gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 1px 8px #33512b33;
+}
+
+/* Depoimentos */
+.depoimento-card {
+    background: var(--cinza);
+    border-left: 6px solid var(--verde-claro);
+    border-radius: 12px;
+    max-width: 370px;
+    margin: 1em auto;
+    padding: 1em 1.2em;
+    box-shadow: 0 1px 6px #33512b12;
+}
+.depoimento-card span {
+    display: block;
+    color: var(--verde-logo);
+    font-weight: bold;
+    margin-top: 0.8em;
+}
+
+/* Equipe */
+.equipe-group {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.equipe-card {
+    background: var(--cinza);
+    border-radius: 14px;
+    min-width: 180px;
+    max-width: 200px;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 1px 6px #33512b14;
+}
+.equipe-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+.equipe-card h4 {
+    margin: 0.4em 0 0.2em 0;
+    color: var(--verde-logo);
+}
+
+/* Aulas */
+.aulas .card-group {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+.aulas .card {
+    background: var(--cinza);
+    border-left: 6px solid var(--verde-claro);
+    border-radius: 12px;
+    min-width: 220px;
+    max-width: 280px;
+    padding: 1em 1.2em;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 6px #33512b22;
+}
+.card h4 {
+    color: var(--verde-logo);
+    margin-top: 0;
+}
+.card p {
+    color: #33512bbd;
+}
+
+/* Agenda */
+.agenda .calendar-wrapper {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2em;
+}
+.agenda input[type="date"], .agenda input[type="time"] {
+    padding: 0.6em;
+    font-size: 1em;
+    border: 1px solid var(--verde-logo);
+    border-radius: 6px;
+}
+.agenda button {
+    background: var(--verde-claro);
+    color: var(--verde-logo);
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+.agenda button:hover {
+    background: #9DD63C;
+}
+
+/* FAQ */
+.faq details {
+    margin-bottom: 1em;
+    background: var(--cinza);
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 1px 6px #33512b22;
+}
+.faq summary {
+    font-weight: bold;
+    color: var(--verde-logo);
+    cursor: pointer;
+}
+
+/* Contato */
+.contato a.btn-whats {
+    margin-top: 1.2em;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5em;
+    background: var(--verde-logo);
+    color: var(--branco-logo);
+    margin-top: 3em;
+    border-radius: 0 0 16px 16px;
+}
+
+.mobile-menu {
+    display: none;
+}
+@media (max-width: 650px) {
+    .aulas .card-group,
+    .equipe-group,
+    .insta-gallery {
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    main section {
+        padding: 1em;
+    }
+    .header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .mobile-menu {
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: var(--verde-logo);
+        color: var(--branco-logo);
+        padding: 0.8em 0;
+        justify-content: center;
+        gap: 1em;
+        font-size: 1.1em;
+        z-index: 100;
+    }
+    .mobile-menu a {
+        color: var(--verde-claro);
+        text-decoration: none;
+        padding: 0 0.5em;
+        font-weight: bold;
+    }
+    .mobile-menu a:hover {
+        color: #fff;
+    }
+}

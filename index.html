@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FL-FITNESS Studio Funcional</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logo FL-FITNESS" class="logo">
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#aulas">Aulas</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#instagram">Instagram</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <!-- Ícone Espaço do Aluno -->
+        <a href="https://aluno.flfitness.com.br" target="_blank" class="aluno-icone" title="Entrar no Espaço do Aluno">
+            <svg xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 0 32 32" width="34">
+                <circle cx="16" cy="16" r="16" fill="#BBF745"/>
+                <path d="M16 10a4 4 0 110 8 4 4 0 010-8zm0 10c4 0 8 2 8 4v2H8v-2c0-2 4-4 8-4z" fill="#33512B"/>
+            </svg>
+            <span>Espaço do Aluno</span>
+        </a>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>FL-FITNESS Studio Funcional</h1>
+            <h2 class="slogan">Mais saúde, mais energia, mais movimento</h2>
+            <a href="https://wa.me/5588992673" class="btn-whats" target="_blank">Fale conosco no WhatsApp</a>
+        </section>
+        <section id="sobre" class="sobre">
+            <h3>Sobre o Estúdio</h3>
+            <p>
+                Somos um estúdio próprio, focado em treinamento funcional para saúde e bem-estar.<br>
+                Aqui, você encontra energia, motivação e acompanhamento personalizado com nossa equipe de Personal Trainers.
+            </p>
+        </section>
+        <section id="instagram" class="instagram">
+            <h3>Nosso Instagram <a href="https://instagram.com/flfitnesstudio" target="_blank">@flfitnesstudio</a></h3>
+            <div class="insta-gallery">
+                <img src="insta1.jpg" alt="Post Instagram 1">
+                <img src="insta2.jpg" alt="Post Instagram 2">
+                <img src="insta3.jpg" alt="Post Instagram 3">
+            </div>
+        </section>
+        <section id="aulas" class="aulas">
+            <h3>Nossas Aulas</h3>
+            <div class="card-group">
+                <div class="card">
+                    <h4>Personal Trainer Individual</h4>
+                    <p>Acompanhamento exclusivo para resultados rápidos e seguros.</p>
+                </div>
+                <div class="card">
+                    <h4>Grupos Funcionais</h4>
+                    <p>Dinâmica coletiva, mais motivação e energia!</p>
+                </div>
+                <div class="card">
+                    <h4>Sessões de Mobilidade</h4>
+                    <p>Recupere movimentos e previna lesões com aulas focadas.</p>
+                </div>
+            </div>
+        </section>
+        <section id="agenda" class="agenda">
+            <h3>Agende sua Aula</h3>
+            <div class="calendar-wrapper">
+                <input type="date" id="agenda-date">
+                <input type="time" id="agenda-time">
+                <button onclick="agendarWhatsApp()">Agendar via WhatsApp</button>
+            </div>
+        </section>
+        <section id="depoimentos" class="depoimentos">
+            <h3>Depoimentos</h3>
+            <div class="depoimento-card">
+                <p>“Desde que comecei no FL-FITNESS, minha disposição mudou completamente. Recomendo!”</p>
+                <span>- Ana Souza</span>
+            </div>
+            <div class="depoimento-card">
+                <p>“Equipe excelente, aulas motivadoras e ambiente acolhedor. Melhor escolha.”</p>
+                <span>- Carlos Lima</span>
+            </div>
+        </section>
+        <section id="equipe" class="equipe">
+            <h3>Nossa Equipe</h3>
+            <div class="equipe-group">
+                <div class="equipe-card">
+                    <img src="treinador1.jpg" alt="Treinador 1">
+                    <h4>Flávio Lucio</h4>
+                    <p>Especialista em Treinamento Funcional</p>
+                </div>
+                <div class="equipe-card">
+                    <img src="treinador2.jpg" alt="Treinador 2">
+                    <h4>Juliana Silva</h4>
+                    <p>Preparação Física e Mobilidade</p>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq">
+            <h3>Perguntas Frequentes</h3>
+            <details>
+                <summary>Preciso de avaliação física?</summary>
+                <p>Sim, realizamos avaliação antes de iniciar as atividades.</p>
+            </details>
+            <details>
+                <summary>Posso fazer aula experimental?</summary>
+                <p>Claro! É só agendar conosco pelo WhatsApp.</p>
+            </details>
+            <details>
+                <summary>Quais os horários disponíveis?</summary>
+                <p>Temos turmas de manhã, tarde e noite, de acordo com sua disponibilidade.</p>
+            </details>
+        </section>
+        <section id="contato" class="contato">
+            <h3>Entre em contato</h3>
+            <p>Quer transformar sua saúde? Fale agora mesmo com nosso time:</p>
+            <a href="https://wa.me/5588992673" class="btn-whats" target="_blank">WhatsApp: +55 8899 2673</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 FL-FITNESS Studio Funcional</p>
+    </footer>
+    <div class="mobile-menu">
+        <a href="#agenda">Agendar</a> /
+        <a href="#instagram">Instagram</a> /
+        <a href="https://wa.me/5588992673">WhatsApp</a>
+        /
+        <a href="https://aluno.flfitness.com.br" target="_blank">Espaço do Aluno</a>
+    </div>
+    <script>
+        function agendarWhatsApp() {
+            const date = document.getElementById('agenda-date').value;
+            const time = document.getElementById('agenda-time').value;
+            let msg = `Olá! Gostaria de agendar uma aula no FL-FITNESS para ${date} às ${time}.`;
+            window.open(`https://wa.me/5588992673?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
